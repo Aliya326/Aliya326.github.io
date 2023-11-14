@@ -12,7 +12,7 @@
 
     
     <title>
-        MySQL建表 |
+        MySQL增删改查 |
         
         Aliya&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,15 +23,15 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="MySQL建表指令如下use 数据库的名称;create if not exists table 表名(    列名 数据类型 性质 comment’注释内容’,    …… ); 说明1.性质决定了该列可否为空。主键性质非空且不重复。2.comment为该列的注释，最多1024个字符 一些性质1.PRIMARY KEY:定义主键，是一个唯一索引，其中所有主键列必须定义为not null，且不重复">
+    <meta name="description" content="指令示例(以book表为例)1.删除表:delete from book;2.在表中删除列：alter book drop book_id;3.在表中增加列:alter book add book_id;4.更改表中列名:alter book column old_name to new_name;5.在表中电脑列插入数据:insert into book(book_id,book_name) v">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL建表">
-<meta property="og:url" content="http://example.com/2023/10/10/MySQL%E5%BB%BA%E8%A1%A8/index.html">
+<meta property="og:title" content="MySQL增删改查">
+<meta property="og:url" content="http://example.com/2023/10/20/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/index.html">
 <meta property="og:site_name" content="Aliya&#39;s Blog">
-<meta property="og:description" content="MySQL建表指令如下use 数据库的名称;create if not exists table 表名(    列名 数据类型 性质 comment’注释内容’,    …… ); 说明1.性质决定了该列可否为空。主键性质非空且不重复。2.comment为该列的注释，最多1024个字符 一些性质1.PRIMARY KEY:定义主键，是一个唯一索引，其中所有主键列必须定义为not null，且不重复">
+<meta property="og:description" content="指令示例(以book表为例)1.删除表:delete from book;2.在表中删除列：alter book drop book_id;3.在表中增加列:alter book add book_id;4.更改表中列名:alter book column old_name to new_name;5.在表中电脑列插入数据:insert into book(book_id,book_name) v">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-13T03:30:14.127Z">
+<meta property="article:published_time" content="2023-10-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-24T03:46:28.882Z">
 <meta property="article:author" content="Aliya">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
@@ -107,7 +107,7 @@
         <div id="wrap">
             <header id="header">
     
-        <img data-src="/covers/cover2.jpg" data-sizes="auto" alt="MySQL建表" class="lazyload">
+        <img data-src="/covers/cover3.jpg" data-sizes="auto" alt="MySQL增删改查" class="lazyload">
     
     <div id="header-outer" class="outer">
         <div id="header-title" class="inner">
@@ -115,7 +115,7 @@
                 
                     
                     
-                        <a href="/" id="logo"><h1>MySQL建表</h1></a>
+                        <a href="/" id="logo"><h1>MySQL增删改查</h1></a>
                     
                 
             </div>
@@ -156,14 +156,14 @@
 </header>
 
             <div id="content" class="outer">
-                <section id="main"><article id="post-MySQL建表" class="h-entry article article-type-post"
+                <section id="main"><article id="post-MySQL增删改查" class="h-entry article article-type-post"
          itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
     <div class="article-inner">
         <div class="article-meta">
             <div class="article-date wow slideInLeft">
-    <a href="/2023/10/10/MySQL%E5%BB%BA%E8%A1%A8/" class="article-date-link">
-        <time datetime="2023-10-09T16:00:00.000Z"
-              itemprop="datePublished">2023-10-10</time>
+    <a href="/2023/10/20/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/" class="article-date-link">
+        <time datetime="2023-10-19T16:00:00.000Z"
+              itemprop="datePublished">2023-10-20</time>
     </a>
 </div>
 
@@ -175,14 +175,13 @@
 
         <div class="e-content article-entry" itemprop="articleBody">
             
-                <h2 id="MySQL建表指令如下"><a href="#MySQL建表指令如下" class="headerlink" title="MySQL建表指令如下"></a>MySQL建表指令如下</h2><p>use 数据库的名称;<br>create if not exists table 表名(<br>    列名 数据类型 性质 comment’注释内容’,<br>    ……<br> );</p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>1.性质决定了该列可否为空。主键性质非空且不重复。<br>2.comment为该列的注释，最多1024个字符</p>
-<h2 id="一些性质"><a href="#一些性质" class="headerlink" title="一些性质"></a>一些性质</h2><p>1.PRIMARY KEY:定义主键，是一个唯一索引，其中所有主键列必须定义为not null，且不重复，一个表中只能有一个主键。<br>2.UNIQUE:索引创建一个约束，以便索引中的所有值都必须是不同的。与主键不同的是可以有唯一一个空值，且一个表中可以有多个。<br>3.NULL或NOT NULL：可以限制字段是否可以为空。</p>
+                <h2 id="指令示例-以book表为例"><a href="#指令示例-以book表为例" class="headerlink" title="指令示例(以book表为例)"></a>指令示例(以book表为例)</h2><p>1.删除表:delete from book;<br>2.在表中删除列：alter book drop book_id;<br>3.在表中增加列:alter book add book_id;<br>4.更改表中列名:alter book column old_name to new_name;<br>5.在表中电脑列插入数据:insert into book(book_id,book_name) values(1,’假如给我三天光明’),(2,’数学书’),(3.’英语书’);<br>6.更改表中列的数据类型:alter table book modify 列名 数据类型 约束;<br>7.查询指定表或表中的列：select *&#x2F;字段列表 from 表名;<br>8.更改表中指定列的数据：update book set 列名&#x3D;数据  where condition;</p>
+<h2 id="说明和补充"><a href="#说明和补充" class="headerlink" title="说明和补充"></a>说明和补充</h2><p>1.book(book_id,book_name)括号里的内容跟实际表中的列名一一对应。<br>2.在查询表中 * 意为为查询整张表即select * from boook;  。<br> 另外还有select book_id as name ‘书名’ from book; 意为在查询book_id这个列时给它一个‘书名’的别名。<br> 查询多个列时在后面加一个‘,’即可。<br> 3.限制查询<br>   （一）限制查询行数：select *|列名 from 表名 limit;  。这个命令有两种形式一种是select *|列名 from 表名 limit number; 在number处输入的数字是多少就查几行。<br>        另一种是select *|列名 from 表名 limit number1，number2; 这个指令表示查询表中number1到number2行。<br>   （二）限制查询条件select * from book where condition1 and&#x2F;or&#x2F;not condition2; 当指令中的条件为adn时则两个条件都要满足，or则只需其中一个</p>
 
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/2023/10/10/MySQL%E5%BB%BA%E8%A1%A8/" data-id="cloxqv6sb0004kku80ct072d8" data-title="MySQL建表"
+            <a data-url="http://example.com/2023/10/20/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/" data-id="cloxqv6rp0001kku8hnduaduv" data-title="MySQL增删改查"
                class="article-share-link">分享</a>
             
             
@@ -197,31 +196,17 @@
         
     <nav id="article-nav" class="wow fadeInUp">
         
-            <div class="article-nav-link-wrap article-nav-link-left">
-                
-                    <img data-src="/covers/cover3.jpg" data-sizes="auto" alt="MySQL增删改查"
-                         class="lazyload">
-                
-                <a href="/2023/10/20/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/"></a>
-                <div class="article-nav-caption">前一篇</div>
-                <h3 class="article-nav-title">
-                    
-                        MySQL增删改查
-                    
-                </h3>
-            </div>
-        
         
             <div class="article-nav-link-wrap article-nav-link-right">
                 
-                    <img data-src="/covers/cover1.png" data-sizes="auto" alt="MySQL数据库的创建"
+                    <img data-src="/covers/cover2.jpg" data-sizes="auto" alt="MySQL建表"
                          class="lazyload">
                 
-                <a href="/2023/10/10/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA/"></a>
+                <a href="/2023/10/10/MySQL%E5%BB%BA%E8%A1%A8/"></a>
                 <div class="article-nav-caption">后一篇</div>
                 <h3 class="article-nav-title">
                     
-                        MySQL数据库的创建
+                        MySQL建表
                     
                 </h3>
             </div>
